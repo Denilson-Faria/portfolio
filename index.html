@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denilson Faria | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+
+            <li>
+                <a href="#Sobre" class="menu-link">Sobre</a>
+            </li>
+
+            <li>
+                <a href="#Projetos" class="menu-link">Projetos</a>
+            </li>
+
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+
+        <img src="./img/perfil.png" alt="Foto de Denilson Faria" class="foto-perfil">
+        <h1> Denilson Faria</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+
+    </main>
+
+
+    <section id="Sobre" class="Sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Sou desenvolvedor Front-End apaixonado por transformar ideias em interfaces funcionais, acessíveis
+                e visualmente atraentes.
+
+            </p>
+        </div>
+    </section>
+
+    <section id="Projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./img/starbucks.png" alt="Projeto Starbucks" class="projetos-imagem">
+
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Starbucks Landing Page</h3>
+                    <p class="paragrafo-projetos">
+                        Desenvolvimento de uma Landing Page com foco na fidelidade visual e
+                        responsividade, utilizando HTML e CSS/Sass para recriar o design da marca Starbucks.
+                    </p>
+
+                    <div class="botoes-projeto">
+                        <a href="https://seu-projeto.com" target="_blank" class="btn-projeto">
+                            👨🏾‍💻 Veja o Projeto
+                        </a>
+
+                        <a href="https://github.com/seu-repo" target="_blank" class="btn-codigo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                class="icon-github">
+                            Veja o Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="projetos-card">
+                <img src="./img/base de conhecimento.png" alt="Projeto Base Dev" class="projetos-imagem">
+
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Base de Conhecimento Dev</h3>
+                    <p class="paragrafo-projetos">
+                        Uma coleção organizada de artigos e tutoriais que criei para consolidar e compartilhar
+                        meu aprendizado em JavaScript e Python, abordando conceitos-chave, melhores práticas e exemplos
+                        de código.
+                    </p>
+
+                    <div class="botoes-projeto">
+                        <a href="https://seu-projeto.com" target="_blank" class="btn-projeto">
+                            👨🏾‍💻 Veja o Projeto
+                        </a>
+
+                        <a href="https://github.com/seu-repo" target="_blank" class="btn-codigo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                class="icon-github">
+                            Veja o Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+
+            <div class="grupo-form">
+
+                <textarea class="campo-form" placeholder="Digite Sua Mensagem" rows="6" id="mensagem"></textarea>
+
+            </div>
+
+            <button type="submit" class="botao-form"> Enviar Whatsapp</button>
+
+        </form>
+
+
+    </section>
+
+    <script>
+
+        function enviarWhats(event) {
+            event.preventDefault()
+            const nome = document.getElementById('nome').value
+            const mensagem = document.getElementById('mensagem').value
+            const telefone = '5531993509726'
+
+
+            const texto = `Olá Me chamo ${nome}, ${mensagem}`
+            const msgformatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}/?text=${msgformatada}`;
+
+            console.log(url)
+
+            window.open(url, '_blank')
+
+        }
+
+    </script>
+
+</body>
+
+</html>
