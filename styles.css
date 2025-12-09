@@ -36,6 +36,7 @@ body {
     padding: 1.5rem;
     z-index: 100;
     background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 .menu {
@@ -127,6 +128,104 @@ h1 {
 .sobre-paragrafo {
     font-size: 1.2rem;
     text-align: center;
+    line-height: 1.8;
+}
+
+/* ==========================
+   SKILLS (⭐ NOVO)
+========================== */
+.skills {
+    padding: 6rem 2rem;
+}
+
+.skills-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.skill-categoria {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.skill-categoria:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(79, 70, 229, 0.3);
+}
+
+.categoria-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primaria);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 1.5rem 1rem;
+    
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: default;
+}
+
+.skill-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primaria);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);
+}
+
+.skill-card i {
+    font-size: 2.5rem;
+    color: var(--primaria);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover i {
+    transform: scale(1.1);
+    color: var(--secundaria);
+}
+
+.skill-card span {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.badge-aprendendo {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 0.65rem;
+    padding: 4px 8px;
+    background: var(--secundaria);
+    border-radius: 8px;
+    font-weight: 600;
 }
 
 /* ==========================
@@ -144,7 +243,7 @@ h1 {
 
 .projetos-caixa {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -153,9 +252,9 @@ h1 {
 .projetos-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(5px);
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
     transition: .4s ease;
@@ -163,7 +262,8 @@ h1 {
 
 .projetos-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.25);
+    box-shadow: 0 15px 40px rgba(79, 70, 229, 0.35);
+    border-color: rgba(79, 70, 229, 0.3);
 }
 
 .projetos-imagem {
@@ -176,20 +276,62 @@ h1 {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 1.4rem 1.6rem;
+    padding: 1.8rem 1.6rem;
+    gap: 8px;
 }
 
 .info-projetos {
     font-size: 1.3rem;
     font-weight: 600;
     color: #fff;
-    margin-bottom: .3rem;
+    margin-top: 8px;
+    margin-bottom: 12px;
 }
 
 .paragrafo-projetos {
     font-size: 1rem;
-    color: rgba(226,232,240,.8);
-    line-height: 1.4rem;
+    color: rgba(226,232,240,.85);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* Destaques dos projetos (⭐ NOVO) */
+.destaques-projeto {
+    font-size: 0.9rem;
+    color: rgba(226,232,240,0.7);
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.destaques-projeto strong {
+    color: rgba(226,232,240,0.9);
+    font-weight: 600;
+}
+
+/* Tags de tecnologia (⭐ NOVO) */
+.tags-tecnologia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+    margin-top: auto;
+}
+
+.tag {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(226,232,240,0.9);
+    background: rgba(79, 70, 229, 0.2);
+    border: 1px solid rgba(79, 70, 229, 0.3);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(79, 70, 229, 0.3);
+    border-color: rgba(79, 70, 229, 0.5);
+    transform: translateY(-2px);
 }
 
 /* ==========================
@@ -198,7 +340,7 @@ h1 {
 .botoes-projeto {
     display: flex;
     gap: 12px;
-    margin-top: auto;
+    margin-top: 0;
 }
 
 .btn-projeto,
@@ -208,19 +350,15 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 6px;
-
-    padding: 10px 16px;
+    padding: 12px 16px;
     border-radius: 10px;
-
-    font-size: .86rem;
+    font-size: .88rem;
     font-weight: 500;
     color: #dcdcdc;
     text-decoration: none;
-
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.12);
     transition: .25s ease;
-    margin-top: 15px;
 }
 
 .btn-projeto:hover,
@@ -231,7 +369,6 @@ h1 {
     box-shadow: 0px 6px 22px rgba(0,0,0,0.35);
 }
 
-/* Veja o código – ícone */
 .icon-github {
     width: 16px;
     opacity: .7;
@@ -267,19 +404,15 @@ h1 {
 .contato-btn {
     width: 300px;
     padding: 18px 28px;
-
     display: flex;
     align-items: center;
     gap: 12px;
-
     color: #e9e9e9;
     text-decoration: none;
-
     border-radius: 16px;
     border: 1px solid rgba(255,255,255,.15);
     background: rgba(255,255,255,.05);
     backdrop-filter: blur(12px);
-
     transition: .35s cubic-bezier(.16,1,.3,1);
 }
 
@@ -299,58 +432,6 @@ h1 {
 .contato-btn:hover i {
     opacity: 1;
     transform: scale(1.15);
-}
-
-/* ==========================
-   FORMULÁRIO CONTATO
-========================== */
-.formulario-contato {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-
-    border-radius: 16px;
-    background: rgba(255,255,255,.05);
-    backdrop-filter: blur(5px);
-    border: 1px solid var(--vidro);
-}
-
-.grupo-form { margin-bottom: 1.5rem; }
-
-.campo-form {
-    width: 100%;
-    padding: 1rem;
-
-    background: rgba(255,255,255,.05);
-    border-radius: 8px;
-    border: 1px solid var(--vidro);
-    color: var(--claro);
-    outline: none;
-}
-
-.campo-form:focus {
-    border-color: var(--secundaria);
-    box-shadow: 0 0 10px rgba(79,70,229,.3);
-}
-
-.botao-form {
-    width: 100%;
-    padding: 1rem 2rem;
-
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-
-    font-weight: bold;
-    color: var(--claro);
-    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
-
-    transition: .4s ease;
-}
-
-.botao-form:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 5px 15px rgba(79,70,229,.4);
 }
 
 /* ==========================
@@ -382,10 +463,8 @@ h1 {
     width: 100%;
     margin-top: 80px;
     padding: 35px 0;
-
     display: flex;
     justify-content: center;
-
     font-size: 1rem;
     color: #d6d6d6;
     background: rgba(255,255,255,.03);
@@ -408,4 +487,92 @@ h1 {
     background: linear-gradient(90deg,#b055ff,#7c4dff,#5b3fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+@media (max-width: 768px) {
+    /* Menu */
+    .menu {
+        gap: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Header */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho-sub-titulo {
+        font-size: 1.5rem;
+    }
+
+    .foto-perfil {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmin(100px, 1fr));
+        gap: 1rem;
+    }
+
+    .skill-card {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .skill-card i {
+        font-size: 2rem;
+    }
+
+    /* Projetos */
+    .projetos-caixa {
+        grid-template-columns: 1fr;
+    }
+
+    .projetos-imagem {
+        height: 180px;
+    }
+
+    .info-projetos {
+        font-size: 1.15rem;
+    }
+
+    .botoes-projeto {
+        flex-direction: column;
+    }
+
+    .btn-projeto,
+    .btn-codigo {
+        width: 100%;
+    }
+
+    /* Contatos */
+    .contato-btn {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cabecalho-sub-titulo {
+        font-size: 1.2rem;
+    }
+
+    .sobre-titulo,
+    .skills-titulo,
+    .projetos-titulo,
+    .contatos-titulo {
+        font-size: 2rem;
+    }
+
+    .menu {
+        gap: 1rem;
+    }
 }
