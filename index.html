@@ -307,7 +307,6 @@
 
         </div>
     </section>
-
     <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Entre em Contato</h2>
 
@@ -322,7 +321,8 @@
                 LinkedIn
             </a>
 
-            <a href="mailto:dfariafreela@gmail.com" class="contato-btn" target="_blank">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dfariafreela@gmail.com" target="_blank"
+                class="contato-btn">
                 <i class="fas fa-envelope"></i>
                 Me envie um e-mail
             </a>
@@ -332,6 +332,11 @@
                 <i class="fa-brands fa-whatsapp"></i>
                 WhatsApp
             </a>
+
+            <a href="./cv/Curriculo - Denlson Faria Dev.pdf" download="Denilson-Faria-CV.pdf" class="contato-btn">
+                <i class="fas fa-download"></i>
+                Baixar Currículo
+            </a>
         </div>
     </section>
 
@@ -340,40 +345,16 @@
     </footer>
 
     <script>
-    if ('scrollRestoration' in history) {
-        history.scrollRestoration = 'manual';
-    }
-
-    window.addEventListener('beforeunload', () => {
-        window.scrollTo(0, 0);
-    });
-
-    window.onload = function () {
-        setTimeout(() => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }, 5);
-    };
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            if (this.hash !== "") {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-
                 const targetElement = document.querySelector(this.hash);
-
                 if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
                 }
-            }
+            });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>
