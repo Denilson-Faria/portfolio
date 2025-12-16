@@ -14,3 +14,15 @@ function scrollReveal() {
 
 window.addEventListener("scroll", scrollReveal);
 scrollReveal(); // rodar ao carregar a página
+
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    if (loader) {
+        setTimeout(() => {
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 500);
+        }, 1000);
+    }
+});

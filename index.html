@@ -17,37 +17,54 @@
         <ul class="menu">
             <li><a href="#inicio" class="menu-link">Início</a></li>
             <li><a href="#Sobre" class="menu-link">Sobre</a></li>
-            <li><a href="#skills" class="menu-link">Skills</a></li> <!-- ⭐ NOVO -->
+            <li><a href="#skills" class="menu-link">Skills</a></li>
             <li><a href="#Projetos" class="menu-link">Projetos</a></li>
             <li><a href="#contatos" class="menu-link">Contato</a></li>
         </ul>
     </nav>
 
-    <main id="inicio" class="cabecalho">
-        <img src="./img/perfil.png" alt="Foto de Denilson Faria" class="foto-perfil">
-        <h1> Denilson Faria</h1>
-        <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
-    </main>
+    <header id="inicio" class="cabecalho">
 
+        <div class="hero-content">
+            <h1>
+                Transformando<br>
+                ideias em
+                <span class="highlight">soluções digitais</span><br>
+                que impactam.
+            </h1>
+
+            <p class="cabecalho-sub-titulo">
+                Desenvolvedor Front-End | Especialista em criar<br>
+                experiências visuais fluidas e envolventes.
+            </p>
+
+            <a href="#Projetos" class="cta-button">
+                Ver Projetos
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="perfil-wrapper">
+            <img src="./img/perfil1.png" alt="Foto de Perfil" class="foto-perfil">
+        </div>
+
+    </header>
     <section id="Sobre" class="Sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
                 Olá! Sou Denilson Faria, apaixonado por criar interfaces que não apenas funcionam, mas encantam.
-                Como Desenvolvedor Front-End, transformo código em experiências visuais fluidas, envolventes e pensadas
+                Como Desenvolvedor Front-End, transformo código em experiências visuais fluidas, envolventes e
+                pensadas
                 para o usuário. Cada projeto é uma oportunidade de unir estética, desempenho e usabilidade.
             </p>
         </div>
     </section>
 
-    <!-- ============================================
-         ⭐ SEÇÃO DE SKILLS - ADICIONAR AQUI ⭐
-    ============================================ -->
     <section id="skills" class="skills">
         <h2 class="skills-titulo">🛠️ Tecnologias & Ferramentas</h2>
-        
+
         <div class="skills-container">
-            <!-- Front-End -->
             <div class="skill-categoria">
                 <h3 class="categoria-titulo">Front-End</h3>
                 <div class="skills-grid">
@@ -71,7 +88,6 @@
                 </div>
             </div>
 
-            <!-- Ferramentas -->
             <div class="skill-categoria">
                 <h3 class="categoria-titulo">Ferramentas</h3>
                 <div class="skills-grid">
@@ -94,7 +110,6 @@
                 </div>
             </div>
 
-            <!-- Conceitos -->
             <div class="skill-categoria">
                 <h3 class="categoria-titulo">Conceitos & Práticas</h3>
                 <div class="skills-grid">
@@ -119,19 +134,58 @@
         </div>
     </section>
 
-    <section id="Projetos" class="projetos scroll-reveal">
+    <section id="Projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
 
         <div class="projetos-caixa">
 
-            <!-- CARD 1 -->
-            <div class="projetos-card scroll-reveal">
+            <div class="projetos-card" style="position: relative;">
+
+                <img src="./img/previsao.png" alt="Projeto Previsão do Dev" class="projetos-imagem">
+
+                <div class="caixa-texto-projeto">
+                    <span class="tag-recente">Mais Recente 🔥</span>
+                    <h3 class="info-projetos">🌤️ Previsão do Dev — Clima</h3>
+                    <p class="paragrafo-projetos">
+                        Projeto frontend que exibe a previsão do tempo em tempo real usando uma API.
+                        Totalmente responsivo, com layout limpo e interativo para consultar o clima de diferentes
+                        cidades.
+                    </p>
+
+                    <div class="destaques-projeto">
+                        <strong>Destaques:</strong> Consumo de API em tempo real • Layout responsivo • Experiência
+                        interativa
+                    </div>
+
+                    <div class="tags-tecnologia">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API</span>
+                    </div>
+
+                    <div class="botoes-projeto">
+                        <a href="https://previsaododev.vercel.app/" target="_blank" class="btn-projeto">
+                            👨🏾‍💻 Veja o Projeto
+                        </a>
+                        <a href="https://github.com/Denilson-Faria/previsao-do-dev" target="_blank"
+                            class="btn-codigo">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                class="icon-github" alt="GitHub icon"> Veja o Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="projetos-card">
+
                 <img src="./img/starbucks.png" alt="Projeto Starbucks" class="projetos-imagem">
 
                 <div class="caixa-texto-projeto">
                     <h3 class="info-projetos">☕ Landing Page — Starbucks</h3>
                     <p class="paragrafo-projetos">
-                        Interface interativa com sistema de troca dinâmica de temas. 
+                        Interface interativa com sistema de troca dinâmica de temas.
                         Manipulação do DOM, transições CSS e layout responsivo.
                     </p>
 
@@ -145,20 +199,20 @@
                         <span class="tag">JavaScript</span>
                     </div>
 
+
                     <div class="botoes-projeto">
                         <a href="https://starbuckslading.vercel.app/" target="_blank" class="btn-projeto">
                             👨🏾‍💻 Veja o Projeto
                         </a>
                         <a href="https://github.com/Denilson-Faria/starbucks" target="_blank" class="btn-codigo">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                class="icon-github"> Veja o Código
+                                class="icon-github" alt="GitHub icon"> Veja o Código
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD 2 -->
-            <div class="projetos-card scroll-reveal">
+            <div class="projetos-card">
                 <img src="./img/login-do-dev.png" alt="Projeto Login do Dev" class="projetos-imagem">
 
                 <div class="caixa-texto-projeto">
@@ -183,14 +237,13 @@
                         </a>
                         <a href="https://github.com/Denilson-Faria/Login-Do-Dev" target="_blank" class="btn-codigo">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                class="icon-github"> Veja o Código
+                                class="icon-github" alt="GitHub icon"> Veja o Código
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD 3 -->
-            <div class="projetos-card scroll-reveal">
+            <div class="projetos-card">
                 <img src="./img/refri-do-dev (2).png" alt="Projeto Refri do Dev" class="projetos-imagem">
 
                 <div class="caixa-texto-projeto">
@@ -215,14 +268,13 @@
                         </a>
                         <a href="https://github.com/Denilson-Faria/Refri-Do-Dev" target="_blank" class="btn-codigo">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                class="icon-github"> Veja o Código
+                                class="icon-github" alt="GitHub icon"> Veja o Código
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD 4 -->
-            <div class="projetos-card scroll-reveal">
+            <div class="projetos-card">
                 <img src="./img/conversor-do-dev.png" alt="Projeto Conversor" class="projetos-imagem">
 
                 <div class="caixa-texto-projeto">
@@ -246,9 +298,10 @@
                         <a href="https://conversor-do-dev.vercel.app/" target="_blank" class="btn-projeto">
                             👨🏾‍💻 Veja o Projeto
                         </a>
-                        <a href="https://github.com/Denilson-Faria/conversor-do-dev" target="_blank" class="btn-codigo">
+                        <a href="https://github.com/Denilson-Faria/conversor-do-dev" target="_blank"
+                            class="btn-codigo">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                class="icon-github"> Veja o Código
+                                class="icon-github" alt="GitHub icon"> Veja o Código
                         </a>
                     </div>
                 </div>
@@ -288,6 +341,24 @@
         <p>Desenvolvido por <span>Denilson Faria</span> — © 2025</p>
     </footer>
 
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+
+        window.addEventListener('beforeunload', () => {
+            window.scrollTo(0, 0);
+        });
+
+        window.onload = function () {
+            setTimeout(() => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }, 5);
+        };
+    </script>
 </body>
 
 </html>
