@@ -1,28 +1,35 @@
-// Seleciona todos os elementos com a classe .scroll-reveal
-const reveals = document.querySelectorAll(".scroll-reveal");
-
-function scrollReveal() {
-    reveals.forEach((element) => {
-        const rect = element.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        
-        if (rect.top < windowHeight - 100) {
-            element.classList.add("reveal");
-        }
-    });
-}
-
-window.addEventListener("scroll", scrollReveal);
-scrollReveal(); // rodar ao carregar a página
-
-window.addEventListener('load', () => {
-    const loader = document.querySelector('.loader');
-    if (loader) {
-        setTimeout(() => {
-            loader.style.opacity = '0';
-            setTimeout(() => {
-                loader.style.display = 'none';
-            }, 500);
-        }, 1000);
+<script>
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
     }
-});
+
+    window.addEventListener('beforeunload', () => {
+        window.scrollTo(0, 0);
+    });
+
+    window.onload = function () {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }, 5);
+    };
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.hash !== "") {
+                e.preventDefault();
+
+                const targetElement = document.querySelector(this.hash);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+</script>

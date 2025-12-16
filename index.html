@@ -168,8 +168,7 @@
                         <a href="https://previsaododev.vercel.app/" target="_blank" class="btn-projeto">
                             👨🏾‍💻 Veja o Projeto
                         </a>
-                        <a href="https://github.com/Denilson-Faria/previsao-do-dev" target="_blank"
-                            class="btn-codigo">
+                        <a href="https://github.com/Denilson-Faria/previsao-do-dev" target="_blank" class="btn-codigo">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                                 class="icon-github" alt="GitHub icon"> Veja o Código
                         </a>
@@ -298,8 +297,7 @@
                         <a href="https://conversor-do-dev.vercel.app/" target="_blank" class="btn-projeto">
                             👨🏾‍💻 Veja o Projeto
                         </a>
-                        <a href="https://github.com/Denilson-Faria/conversor-do-dev" target="_blank"
-                            class="btn-codigo">
+                        <a href="https://github.com/Denilson-Faria/conversor-do-dev" target="_blank" class="btn-codigo">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                                 class="icon-github" alt="GitHub icon"> Veja o Código
                         </a>
@@ -324,7 +322,7 @@
                 LinkedIn
             </a>
 
-            <a href="mailto:dfariafreela@gmail.com" class="contato-btn">
+            <a href="mailto:dfariafreela@gmail.com" class="contato-btn" target="_blank">
                 <i class="fas fa-envelope"></i>
                 Me envie um e-mail
             </a>
@@ -342,23 +340,40 @@
     </footer>
 
     <script>
-        if ('scrollRestoration' in history) {
-            history.scrollRestoration = 'manual';
-        }
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
 
-        window.addEventListener('beforeunload', () => {
-            window.scrollTo(0, 0);
+    window.addEventListener('beforeunload', () => {
+        window.scrollTo(0, 0);
+    });
+
+    window.onload = function () {
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }, 5);
+    };
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.hash !== "") {
+                e.preventDefault();
+
+                const targetElement = document.querySelector(this.hash);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
         });
-
-        window.onload = function () {
-            setTimeout(() => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }, 5);
-        };
-    </script>
+    });
+</script>
 </body>
 
 </html>
