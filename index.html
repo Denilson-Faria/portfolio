@@ -10,351 +10,332 @@
 </head>
 
 <body>
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
 
-    <div class="particulas"></div>
-
-    <nav class="navegacao">
-        <ul class="menu">
-            <li><a href="#inicio" class="menu-link">Início</a></li>
-            <li><a href="#Sobre" class="menu-link">Sobre</a></li>
-            <li><a href="#skills" class="menu-link">Skills</a></li>
-            <li><a href="#Projetos" class="menu-link">Projetos</a></li>
-            <li><a href="#contatos" class="menu-link">Contato</a></li>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
-    <header id="inicio" class="cabecalho">
-
+    <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1>
-                Transformando<br>
-                ideias em
-                <span class="highlight">soluções digitais</span><br>
-                que impactam.
-            </h1>
-
-            <p class="cabecalho-sub-titulo">
-                Desenvolvedor Front-End | Especialista em criar<br>
-                experiências visuais fluidas e envolventes.
+            <span class="hero-label">👋 Desenvolvedor Front-End</span>
+            <h1>Transformando ideias em experiências digitais</h1>
+            <p class="hero-subtitle">
+                Criando interfaces modernas e performáticas com foco em experiência do usuário e código limpo.
             </p>
-
-            <a href="#Projetos" class="cta-button">
-                Ver Projetos
-                <i class="fas fa-arrow-right"></i>
-            </a>
+            <div class="cta-buttons">
+                <a href="#projetos" class="btn btn-primary">
+                    Ver Projetos
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contato" class="btn btn-secondary">
+                    Entre em contato
+                </a>
+            </div>
         </div>
-
-        <div class="perfil-wrapper">
-            <img src="./img/perfil1.png" alt="Foto de Perfil" class="foto-perfil">
+        <div class="profile-container">
+            <div class="profile-ring"></div>
+            <div class="profile-img">
+                <img src="./img/perfil.png" alt="Denilson Faria">
+            </div>
         </div>
+    </section>
 
-    </header>
-    <section id="Sobre" class="Sobre">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">
-                Olá! Sou Denilson Faria, apaixonado por criar interfaces que não apenas funcionam, mas encantam.
-                Como Desenvolvedor Front-End, transformo código em experiências visuais fluidas, envolventes e
-                pensadas
-                para o usuário. Cada projeto é uma oportunidade de unir estética, desempenho e usabilidade.
+    <section id="sobre">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about-content">
+            <p>
+                Olá! Sou Denilson Faria, desenvolvedor front-end apaixonado por criar interfaces que não apenas
+                funcionam perfeitamente, mas também proporcionam experiências memoráveis. Trabalho com as tecnologias
+                mais modernas do mercado, sempre buscando inovação e qualidade em cada linha de código.
             </p>
         </div>
     </section>
 
-    <section id="skills" class="skills">
-        <h2 class="skills-titulo">🛠️ Tecnologias & Ferramentas</h2>
-
-        <div class="skills-container">
-            <div class="skill-categoria">
-                <h3 class="categoria-titulo">Front-End</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-css3-alt"></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-js"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-react"></i>
-                        <span>React</span>
-                        <span class="badge-aprendendo">Em breve</span>
-                    </div>
+    <section id="skills">
+        <h2 class="section-title">Tecnologias & Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Front-End</h3>
+                <div class="skill-items">
+                    <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                    <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                    <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="skill-tag"><i class="fab fa-react"></i> React (em breve)</span>
                 </div>
             </div>
-
-            <div class="skill-categoria">
-                <h3 class="categoria-titulo">Ferramentas</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fab fa-git-alt"></i>
-                        <span>Git</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-code"></i>
-                        <span>VS Code</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-rocket"></i>
-                        <span>Vercel</span>
-                    </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+                <div class="skill-items">
+                    <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                    <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                    <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+                    <span class="skill-tag"><i class="fas fa-rocket"></i> Vercel</span>
                 </div>
             </div>
-
-            <div class="skill-categoria">
-                <h3 class="categoria-titulo">Conceitos & Práticas</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span>Responsivo</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-plug"></i>
-                        <span>APIs REST</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-database"></i>
-                        <span>LocalStorage</span>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-palette"></i>
-                        <span>UI/UX</span>
-                    </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-lightbulb"></i> Conceitos</h3>
+                <div class="skill-items">
+                    <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsivo</span>
+                    <span class="skill-tag"><i class="fas fa-plug"></i> APIs REST</span>
+                    <span class="skill-tag"><i class="fas fa-palette"></i> UI/UX</span>
+                    <span class="skill-tag"><i class="fas fa-tachometer-alt"></i> Performance</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="Projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
+    <section id="projetos">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./img/contabileasy.png" alt="ContabilEasy" class="project-image">
+                <div class="project-content">
+                    <span class="project-badge">🔥 MAIS RECENTE</span>
+                    <h3 class="project-title">💰 ContabilEasy — Controle Financeiro</h3>
+                    <p class="project-desc">
+                        Dashboard financeiro completo para gestão de receitas, despesas e análise temporal.
+                        Interface moderna com visualização de dados através de gráficos e métricas em tempo real.
+                    </p>
+                    <p class="project-highlights">
+                        <strong>Destaques:</strong> Dashboard interativo • Gráficos e métricas • Análise temporal •
+                        Gestão de dados complexos
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Charts</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://contabileasy.vercel.app/" target="_blank" class="project-link link-demo">
+                            <i class="fas fa-external-link-alt"></i> Veja o Projeto
+                        </a>
+                        <a href="https://github.com/Denilson-Faria/contabileasy" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Veja o Código
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="projetos-caixa">
-
-            <div class="projetos-card" style="position: relative;">
-
-                <img src="./img/previsao.png" alt="Projeto Previsão do Dev" class="projetos-imagem">
-
-                <div class="caixa-texto-projeto">
-                    <span class="tag-recente">Mais Recente 🔥</span>
-                    <h3 class="info-projetos">🌤️ Previsão do Dev — Clima</h3>
-                    <p class="paragrafo-projetos">
+            <div class="project-card">
+                <img src="./img/devmaster.png" alt="DevMaster" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">💻 DevMaster — Plataforma de Ensino</h3>
+                    <p class="project-desc">
+                        Landing page institucional para plataforma de cursos de programação.
+                        Design moderno focado em conversão, com animações suaves e hierarquia visual bem definida.
+                    </p>
+                    <p class="project-highlights">
+                        <strong>Destaques:</strong> Design institucional • Animações suaves • Tipografia trabalhada •
+                        Foco em conversão
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://devmasterr.vercel.app/" target="_blank" class="project-link link-demo">
+                            <i class="fas fa-external-link-alt"></i> Veja o Projeto
+                        </a>
+                        <a href="https://github.com/Denilson-Faria/devmaster" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Veja o Código
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./img/previsao.png" alt="Previsão do Dev" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">🌤️ Previsão do Dev — Clima</h3>
+                    <p class="project-desc">
                         Projeto frontend que exibe a previsão do tempo em tempo real usando uma API.
                         Totalmente responsivo, com layout limpo e interativo para consultar o clima de diferentes
                         cidades.
                     </p>
-
-                    <div class="destaques-projeto">
+                    <p class="project-highlights">
                         <strong>Destaques:</strong> Consumo de API em tempo real • Layout responsivo • Experiência
                         interativa
-                    </div>
-
-                    <div class="tags-tecnologia">
+                    </p>
+                    <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
                         <span class="tag">API</span>
                     </div>
-
-                    <div class="botoes-projeto">
-                        <a href="https://previsaododev.vercel.app/" target="_blank" class="btn-projeto">
-                            👨🏾‍💻 Veja o Projeto
+                    <div class="project-links">
+                        <a href="https://previsaododev.vercel.app/" target="_blank" class="project-link link-demo">
+                            <i class="fas fa-external-link-alt"></i> Veja o Projeto
                         </a>
-                        <a href="https://github.com/Denilson-Faria/previsao-do-dev" target="_blank" class="btn-codigo">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                class="icon-github" alt="GitHub icon"> Veja o Código
+                        <a href="https://github.com/Denilson-Faria/previsao-do-dev" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Veja o Código
                         </a>
                     </div>
                 </div>
             </div>
 
-
-            <div class="projetos-card">
-
-                <img src="./img/starbucks.png" alt="Projeto Starbucks" class="projetos-imagem">
-
-                <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos">☕ Landing Page — Starbucks</h3>
-                    <p class="paragrafo-projetos">
-                        Interface interativa com sistema de troca dinâmica de temas.
-                        Manipulação do DOM, transições CSS e layout responsivo.
+            <div class="project-card">
+                <img src="./img/starbucks.png" alt="Starbucks Landing" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">☕ Landing Page — Starbucks</h3>
+                    <p class="project-desc">
+                        Interface interativa com sistema de troca dinâmica de temas. Manipulação do DOM,
+                        transições CSS e layout responsivo.
                     </p>
-
-                    <div class="destaques-projeto">
+                    <p class="project-highlights">
                         <strong>Destaques:</strong> Troca dinâmica de cores • Animações suaves • Mobile-first
-                    </div>
-
-                    <div class="tags-tecnologia">
+                    </p>
+                    <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
                     </div>
-
-
-                    <div class="botoes-projeto">
-                        <a href="https://starbuckslading.vercel.app/" target="_blank" class="btn-projeto">
-                            👨🏾‍💻 Veja o Projeto
+                    <div class="project-links">
+                        <a href="https://starbuckslading.vercel.app/" target="_blank" class="project-link link-demo">
+                            <i class="fas fa-external-link-alt"></i> Veja o Projeto
                         </a>
-                        <a href="https://github.com/Denilson-Faria/starbucks" target="_blank" class="btn-codigo">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                class="icon-github" alt="GitHub icon"> Veja o Código
+                        <a href="https://github.com/Denilson-Faria/starbucks" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Veja o Código
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="projetos-card">
-                <img src="./img/login-do-dev.png" alt="Projeto Login do Dev" class="projetos-imagem">
-
-                <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos">🔐 Login do Dev</h3>
-                    <p class="paragrafo-projetos">
+            <div class="project-card">
+                <img src="./img/login-do-dev.png" alt="Login do Dev" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">🔐 Login do Dev</h3>
+                    <p class="project-desc">
                         Tela de autenticação moderna com efeito glassmorphism e validação visual de formulário.
                     </p>
-
-                    <div class="destaques-projeto">
+                    <p class="project-highlights">
                         <strong>Destaques:</strong> Design moderno • Estados interativos • Acessível
-                    </div>
-
-                    <div class="tags-tecnologia">
+                    </p>
+                    <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">Font Awesome</span>
                     </div>
-
-                    <div class="botoes-projeto">
-                        <a href="https://logindodev.netlify.app/" target="_blank" class="btn-projeto">
-                            👨🏾‍💻 Veja o Projeto
+                    <div class="project-links">
+                        <a href="https://logindodev.netlify.app/" target="_blank" class="project-link link-demo">
+                            <i class="fas fa-external-link-alt"></i> Veja o Projeto
                         </a>
-                        <a href="https://github.com/Denilson-Faria/Login-Do-Dev" target="_blank" class="btn-codigo">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                class="icon-github" alt="GitHub icon"> Veja o Código
+                        <a href="https://github.com/Denilson-Faria/Login-Do-Dev" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Veja o Código
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="projetos-card">
-                <img src="./img/refri-do-dev (2).png" alt="Projeto Refri do Dev" class="projetos-imagem">
-
-                <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos">🥤 Landing Page — Drink do Dev</h3>
-                    <p class="paragrafo-projetos">
-                        Landing page com carrossel funcional e cores dinâmicas sincronizadas com os produtos.
+            <div class="project-card">
+                <img src="./img/refri-do-dev (2).png" alt="Drink do Dev" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">🥤 Landing Page — Drink</h3>
+                    <p class="project-desc">
+                        Carrossel funcional com cores dinâmicas sincronizadas aos produtos. Interface fluida e moderna.
                     </p>
-
-                    <div class="destaques-projeto">
-                        <strong>Destaques:</strong> Slider sem bibliotecas • Navegação intuitiva • Touch events
-                    </div>
-
-                    <div class="tags-tecnologia">
+                    <p class="project-highlights">
+                        <strong>Destaques:</strong> Carrossel customizado • Sincronização de cores • UX fluida
+                    </p>
+                    <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
                     </div>
-
-                    <div class="botoes-projeto">
-                        <a href="https://refri-dodev.vercel.app/" target="_blank" class="btn-projeto">
-                            👨🏾‍💻 Veja o Projeto
+                    <div class="project-links">
+                        <a href="https://refri-dodev.vercel.app/" target="_blank" class="project-link link-demo">
+                            <i class="fas fa-external-link-alt"></i> Veja o Projeto
                         </a>
-                        <a href="https://github.com/Denilson-Faria/Refri-Do-Dev" target="_blank" class="btn-codigo">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                class="icon-github" alt="GitHub icon"> Veja o Código
+                        <a href="https://github.com/Denilson-Faria/Refri-Do-Dev" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Veja o Código
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="projetos-card">
-                <img src="./img/conversor-do-dev.png" alt="Projeto Conversor" class="projetos-imagem">
-
-                <div class="caixa-texto-projeto">
-                    <h3 class="info-projetos">🔄 Conversor de Moedas</h3>
-                    <p class="paragrafo-projetos">
-                        Aplicação que consome API de câmbio para converter moedas em tempo real.
+            <div class="project-card">
+                <img src="./img/conversor-do-dev.png" alt="Conversor" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">🔄 Conversor de Moedas</h3>
+                    <p class="project-desc">
+                        Aplicação com integração de API de câmbio para conversão em tempo real. Interface intuitiva e
+                        responsiva.
                     </p>
-
-                    <div class="destaques-projeto">
-                        <strong>Destaques:</strong> Integração com API • Async/Await • Validação robusta
-                    </div>
-
-                    <div class="tags-tecnologia">
+                    <p class="project-highlights">
+                        <strong>Destaques:</strong> API de câmbio real • Conversão instantânea • Design clean
+                    </p>
+                    <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
                         <span class="tag">Fetch API</span>
                     </div>
-
-                    <div class="botoes-projeto">
-                        <a href="https://conversor-do-dev.vercel.app/" target="_blank" class="btn-projeto">
-                            👨🏾‍💻 Veja o Projeto
+                    <div class="project-links">
+                        <a href="https://conversor-do-dev.vercel.app/" target="_blank" class="project-link link-demo">
+                            <i class="fas fa-external-link-alt"></i> Veja o Projeto
                         </a>
-                        <a href="https://github.com/Denilson-Faria/conversor-dodev" target="_blank" class="btn-codigo">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                class="icon-github" alt="GitHub icon"> Veja o Código
+                        <a href="https://github.com/Denilson-Faria/conversor-dodev" target="_blank"
+                            class="project-link link-code">
+                            <i class="fab fa-github"></i> Veja o Código
                         </a>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Entre em Contato</h2>
 
-        <div class="contatos-links">
-            <a href="https://github.com/Denilson-Faria" target="_blank" class="contato-btn">
+    <section id="contato">
+        <h2 class="section-title">Vamos Conectar?</h2>
+        <div class="contact-grid">
+            <a href="https://github.com/Denilson-Faria" target="_blank" class="contact-icon github" title="GitHub">
                 <i class="fab fa-github"></i>
-                GitHub
             </a>
-
-            <a href="https://www.linkedin.com/in/denilsonvbFaria" target="_blank" class="contato-btn">
+            <a href="https://www.linkedin.com/in/denilsonvbFaria" target="_blank" class="contact-icon linkedin"
+                title="LinkedIn">
                 <i class="fab fa-linkedin"></i>
-                LinkedIn
             </a>
-
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dfariafreela@gmail.com" target="_blank"
-                class="contato-btn">
+                class="contact-icon email" title="Email">
                 <i class="fas fa-envelope"></i>
-                Me envie um e-mail
             </a>
-
-            <a href="https://wa.me/5531993509726?text=Ola%21%20vim%20pelo%20seu%20portfolio%2C%20gostaria%20de%20um%20or%C3%A7amento"
-                target="_blank" class="contato-btn">
-                <i class="fa-brands fa-whatsapp"></i>
-                WhatsApp
+            <a href="https://wa.me/5531993509726?text=Ola%21%20vim%20pelo%20seu%20portfolio" target="_blank"
+                class="contact-icon whatsapp" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
             </a>
-
-            <a href="./cv/Curriculo - Denlson Faria Dev.pdf" download="Denilson-Faria-CV.pdf" class="contato-btn">
+            <a href="./cv/Curriculo - Denlson Faria Dev.pdf" download class="contact-icon download"
+                title="Baixar Currículo">
                 <i class="fas fa-download"></i>
-                Baixar Currículo
             </a>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer>
         <p>Desenvolvido por <span>Denilson Faria</span> — © 2025</p>
     </footer>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetElement = document.querySelector(this.hash);
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="scroll.js"></script>
+    <script src="lightbox.js"></script>
 </body>
 
 </html>
